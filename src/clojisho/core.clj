@@ -12,8 +12,7 @@
         body (:body raw-response)]
     (:body raw-response)))
 
-(client/get (str base-url "/search/words?keyword=" "egg") 
-                                 {:as :clojure})
+(search-keyword "egg")
 
 (defn -main
   "I don't do a whole lot ... yet."
